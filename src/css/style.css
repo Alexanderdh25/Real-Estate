@@ -366,7 +366,7 @@ form {
 .clear-btn-rent {
     display: none;
     position: absolute;
-    right: 45px;
+    right: 0px;
     top: 58%;
     transform: translateY(-50%);
     background: none;

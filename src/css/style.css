@@ -338,9 +338,10 @@ button {
 }
 
 form {
+    display: flex;
     padding-top: 20px;
     justify-content: center;
-    display: flex;
+    align-items: center;;
 }
 
 .buttons {
@@ -355,16 +356,18 @@ form {
     padding: 15px;
 }
 
-.search-container {
+.search-container,
+.search-container-rent{
     position: relative;
-    width: 100%;
     max-width: 400px;
 }
 
-.clear-btn {
+.clear-btn,
+.clear-btn-rent {
+    display: none;
     position: absolute;
-    right: 100px;
-    top: 48%;
+    right: 45px;
+    top: 58%;
     transform: translateY(-50%);
     background: none;
     border: none;
@@ -877,7 +880,12 @@ button {
         flex-wrap: wrap;
     }
 
-    form #searchInputRent, #searchInput {
+    .clear-btn,
+    .clear-btn-rent {
+        display: block;
+    }
+
+    form  #searchInputRent, #searchInput {
         border: 1px solid black;
         display: flex;
         justify-self: center;

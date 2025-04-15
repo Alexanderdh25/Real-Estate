@@ -76,7 +76,10 @@
 
 <section class="forSalePropertySection">
     <form>
-        <input type="text" id="searchInput" placeholder="Search..." />
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button class="clear-btn" id="clearBtn">×</button>
+        </div>
        <div class="buttons">
             <button type="button" id="sortButton">Sort by Price (Descending)</button>
             <button type="button" id="resetButton">
@@ -115,9 +118,9 @@
 
 <section class="forSalePropertySection">
     <form>
-        <div class="search-container">
+        <div class="search-container-rent">
             <input type="text" id="searchInputRent" placeholder="Search..." />
-            <button class="clear-btn" id="clearBtn">×</button>
+            <button class="clear-btn-rent" id="clearBtn">×</button>
         </div>
         <div class="buttons">
             <button type="button" id="sortButtonRent">Sort by Price (Descending)</button>

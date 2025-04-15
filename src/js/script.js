@@ -27,6 +27,9 @@ const navbar = document.querySelector('.nav-menu');
 const sortButton = document.getElementById('sortButton');
 const sortButtonRent = document.getElementById('sortButtonRent');
 let sortAscending = false;
+//clear input button
+const inputClearButton = document.querySelector('.clear-btn');
+const inputRentClearButton = document.querySelector('.clear-btn-rent');
 
 function fetchData() {
   fetch('assets/data/data.json')
@@ -253,6 +256,22 @@ function renderAgentsContent(data) {
 
 hamburgerMenu.addEventListener('click', () => {
     navbar.classList.toggle('active');
+});
+
+//Clear Search Input
+inputClearButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    searchInput.value = '';
+    renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
+});
+
+inputRentClearButton.addEventListener('click', function(e) {
+  console.log('clicked');
+    e.preventDefault();  
+
+    searchInputRent.value = '';
+    renderProperties(allPropertiesForRent, propertiesToShow, villaForRentCardContainer);
 });
 
   searchInput.addEventListener('input', function() {

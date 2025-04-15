@@ -1,0 +1,18 @@
+{
+  "name": "capstoneprojectfinished",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass ./assets/scss/styles.scss ./src/css/styles.css",
+    "watch-css": "sass --watch ./assets/scss/styles.scss:./src/css/styles.css"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}

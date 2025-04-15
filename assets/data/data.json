@@ -1,0 +1,350 @@
+{
+    "sliderCardData" : [
+       {
+        "badge": "FOR SALE",
+        "title" : "HOUSE LUXURY VILLA",
+        "address":  "Est. ST, 77 - Central Park South, NYC",
+        "cardContent": {
+            "bedrooms": "6 Bedrooms",
+            "bathrooms": "3 Bathrooms",
+            "garages": "2 Garages",
+            "squareFeet": "720 square feet"
+        },
+        "price": "2.230,000"
+       },
+       {
+        "badge": "FOR RENT",
+        "title" : "HOUSE PREMIUM VILLA",
+        "address":  "Est. ST, 77 - Central Park South, NYC",
+        "cardContent": {
+            "bedrooms": "6 Bedrooms",
+            "bathrooms": "3 Bathrooms",
+            "garages": "2 Garages",
+            "squareFeet": "720 square feet"
+        },
+        "price": "80.000"
+       },
+       {
+        "badge": "FOR SALE",
+        "title" : "ROYAL LUXURY VILLA",
+        "address":  "Est. ST, 77 - Central Park South, NYC",
+        "cardContent": {
+            "bedrooms": "6 Bedrooms",
+            "bathrooms": "3 Bathrooms",
+            "garages": "2 Garages",
+            "squareFeet": "720 square feet"
+        },
+        "price": "1.230,000"
+       }
+    ],
+    "villasForSale": [
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 1",
+            "propertyLocation": "Est. ST, 89 - Broadway, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 2",
+            "propertyLocation": "Est. ST, 102 - Madison Avenue, NYC",
+            "propertyContent": {
+                "bedrooms": "5 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "3 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "223.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 3",
+            "propertyLocation": "Est. ST, 56 - Park Avenue, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "623.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 4",
+            "propertyLocation": "Est. ST, 48 - Fifth Avenue, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "323.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 5",
+            "propertyLocation": "Est. ST, 67 - East 57th Street, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "723.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 6",
+            "propertyLocation": "Est. ST, 130 - Lexington Avenue, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "283.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 7",
+            "propertyLocation": "Est. ST, 90 - West 42nd Street, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "623.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 8",
+            "propertyLocation": "Est. ST, 15 - Riverside Drive, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "523.000"
+        },{
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 9",
+            "propertyLocation": "Est. ST, 74 - East 72nd Street, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "453.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 10",
+            "propertyLocation": "Est. ST, 118 - Wall Street, NYC",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        }
+        
+    ],
+    "villasForRent": [
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 1",
+            "propertyLocation": "Villa location 1",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 2",
+            "propertyLocation": "Villa location 2",
+            "propertyContent": {
+                "bedrooms": "5 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "3 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "323.000" 
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 3",
+            "propertyLocation": "Villa location 3",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "2 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 4",
+            "propertyLocation": "Villa location 4",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 5",
+            "propertyLocation": "Villa location 5",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 6",
+            "propertyLocation": "Villa location 6",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 7",
+            "propertyLocation": "Villa location 7",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 8",
+            "propertyLocation": "Villa location 8",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 9",
+            "propertyLocation": "Villa location 9",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "propertyTitle": "Villa 10",
+            "propertyLocation": "Villa location 10",
+            "propertyContent": {
+                "bedrooms": "6 Bedrooms",
+                "bathrooms": "3 Bathrooms",
+                "garages": "2 Garages",
+                "squareFeet": "720 square feet"
+            },
+            "propertyPrice": "123.000"
+        }
+    ],
+    "popularPlaces": [
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "content": {
+                "city": "New York",
+                "availableProperties": "255 properties",
+                "rating": "5"
+            }
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1586474714711-59ad5a5798bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "content": {
+                "city": "Los Angeles",
+                "availableProperties": "310 properties",
+                "rating": "4.5"
+            }
+        },
+        {
+            "imgSrc": "https://plus.unsplash.com/premium_photo-1697730182658-8f469cafff71?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "content": {
+                "city": "Miami",
+                "availableProperties": "500 properties",
+                "rating": "5"
+            }
+        },
+        {
+            "imgSrc": "https://plus.unsplash.com/premium_photo-1733259643014-80d268d25f8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "content": {
+                "city": "Chicago",
+                "availableProperties": "630 properties",
+                "rating": "4.5"
+            }
+        }
+    ],
+    "agentData": [
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "fullname": "Mark Web",
+            "profession": "Real Estate Agent"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "fullname": "Tom Rivers",
+            "profession": "Real Estate Agent"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "fullname": "Oliver Grant",
+            "profession": "Real Estate Agent"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "fullname": "Emma White",
+            "profession": "Real Estate Agent"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "fullname": "Mia Harris",
+            "profession": "Real Estate Agent"
+        },
+        {
+            "imgSrc": "https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "fullname": "Lily Ward",
+            "profession": "Real Estate Agent"
+        }
+    ]
+}

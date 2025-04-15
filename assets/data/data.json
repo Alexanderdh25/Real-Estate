@@ -8,30 +8,30 @@
             "bedrooms": "6 Bedrooms",
             "bathrooms": "3 Bathrooms",
             "garages": "2 Garages",
-            "squareFeet": "720 square feet"
+            "squareFeet": "750 square feet"
         },
         "price": "2.230,000"
        },
        {
         "badge": "FOR RENT",
         "title" : "HOUSE PREMIUM VILLA",
-        "address":  "Est. ST, 77 - Central Park South, NYC",
+        "address":  "Est. ST, 78 - Central Park East, NYC",
         "cardContent": {
             "bedrooms": "6 Bedrooms",
-            "bathrooms": "3 Bathrooms",
-            "garages": "2 Garages",
-            "squareFeet": "720 square feet"
+            "bathrooms": "2 Bathrooms",
+            "garages": "4 Garages",
+            "squareFeet": "830 square feet"
         },
         "price": "80.000"
        },
        {
         "badge": "FOR SALE",
         "title" : "ROYAL LUXURY VILLA",
-        "address":  "Est. ST, 77 - Central Park South, NYC",
+        "address":  "Est. ST, 79 - Central Park West, NYC",
         "cardContent": {
-            "bedrooms": "6 Bedrooms",
+            "bedrooms": "5 Bedrooms",
             "bathrooms": "3 Bathrooms",
-            "garages": "2 Garages",
+            "garages": "3 Garages",
             "squareFeet": "720 square feet"
         },
         "price": "1.230,000"

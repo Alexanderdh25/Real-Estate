@@ -355,6 +355,28 @@ form {
     padding: 15px;
 }
 
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 100px;
+    top: 48%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #888;
+  }
+
+  .clear-btn:hover {
+    color: #333;
+  }
+
 #sortButton, 
 #sortButtonRent {
     background-color: #e54242;

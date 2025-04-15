@@ -276,22 +276,28 @@ function sortProperties() {
     return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice; 
   });
 
-  const sortedForRent = [...allPropertiesForRent.slice(0, propertiesToShow)].sort((a, b) => {
-    return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice;
-  });
-
   // Re-render the properties after sorting
   renderProperties(sortedForSale, propertiesToShow, villaForSaleCardContainer);
-  renderProperties(sortedForRent, propertiesToShow, villaForRentCardContainer);
 
   sortAscending = !sortAscending;
 
   sortButton.textContent = sortAscending ? 'Sort by Price (Ascending)' : 'Sort by Price (Descending)';
+}
+
+function sortPropertiesRent() {
+  const sortedForRent = [...allPropertiesForRent.slice(0, propertiesToShow)].sort((a, b) => {
+    return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice;
+  });
+
+  renderProperties(sortedForRent, propertiesToShow, villaForRentCardContainer);
+
+  sortAscending = !sortAscending;
+
   sortButtonRent.textContent = sortAscending ? 'Sort by Price (Ascending)' : 'Sort by Price (Descending)';
 }
 
 sortButton.addEventListener('click', sortProperties);
-sortButtonRent.addEventListener('click', sortProperties);
+sortButtonRent.addEventListener('click', sortPropertiesRent);
 
 
 //RESET BUTTON

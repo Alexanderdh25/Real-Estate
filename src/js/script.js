@@ -30,29 +30,17 @@ let sortAscending = false;
 
 function fetchData() {
   fetch('assets/data/data.json')
-  .then(response => response.json())
-  .then(data => {
-    localStorage.setItem('data', JSON.stringify(data));
-  })
-  .catch(error => console.error('Error fetching data:', error));
-}
+    .then(response => response.json())
+    .then(data => {
+        sliderData = data.sliderCardData;
+        UpdateSlideCardContent(currentSlide);
 
-function getData() {
-const storedData = localStorage.getItem('data');
-
-  if (storedData) {
-    const parsedData = JSON.parse(storedData);
-    
-    sliderData = parsedData.sliderCardData;
-    UpdateSlideCardContent(currentSlide);
-
-    propertiesForSaleCards(parsedData);
-    propertiesForRentCards(parsedData);
-    renderPopularPlacesContent(parsedData);
-    renderAgentsContent(parsedData);
-  } else {
-    console.log('No data found in localStorage');
-  }
+        propertiesForSaleCards(data);
+        propertiesForRentCards(data);
+        renderPopularPlacesContent(data);
+        renderAgentsContent(data);
+    })
+    .catch(error => console.error('Error fetching data:', error));
 }
 
 // Function to display the current slide and card info
@@ -337,4 +325,3 @@ backToTopButton.onclick = function () {
 };
 
 window.onload = fetchData;
-window.onload = getData;

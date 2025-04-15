@@ -272,11 +272,11 @@ hamburgerMenu.addEventListener('click', () => {
 
 function sortProperties() {
   // Sort properties for sale and for rent
-  const sortedForSale = [...allPropertiesForSale].sort((a, b) => {
+  const sortedForSale = [...allPropertiesForSale.slice(0, propertiesToShow)].sort((a, b) => {
     return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice; 
   });
 
-  const sortedForRent = [...allPropertiesForRent].sort((a, b) => {
+  const sortedForRent = [...allPropertiesForRent.slice(0, propertiesToShow)].sort((a, b) => {
     return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice;
   });
 
@@ -287,6 +287,7 @@ function sortProperties() {
   sortAscending = !sortAscending;
 
   sortButton.textContent = sortAscending ? 'Sort by Price (Ascending)' : 'Sort by Price (Descending)';
+  sortButtonRent.textContent = sortAscending ? 'Sort by Price (Ascending)' : 'Sort by Price (Descending)';
 }
 
 sortButton.addEventListener('click', sortProperties);

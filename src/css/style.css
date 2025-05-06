@@ -1023,10 +1023,6 @@ a[href^="tel"] {
         height: 250px;
     }
 
-    .agents-cards .agent-card {
-        width: 225px;
-    }
-
     .buttons {
         display: flex;
         justify-self: center;

@@ -763,7 +763,12 @@ button {
     cursor: pointer;
 }
 
+.reachoutSection {
+    background: #fff;
+}
+
 .map .title-info {
+    padding: 13px;
     font-size: 13px;
     text-align: center;
     font-weight: 600;
@@ -1016,6 +1021,10 @@ a[href^="tel"] {
 
     .map iframe {
         height: 250px;
+    }
+
+    .agents-cards .agent-card {
+        width: 225px;
     }
 
     .buttons {

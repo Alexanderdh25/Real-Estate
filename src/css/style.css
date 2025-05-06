@@ -788,6 +788,12 @@ button {
     width: 25px;
 }
 
+/* Phones */
+a[href^="tel"] {
+    color: #000;
+    text-decoration: none;
+}
+
 .map {
     margin: 100px 0;
 }

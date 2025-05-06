@@ -30,6 +30,8 @@ let sortAscending = false;
 //clear input button
 const inputClearButton = document.querySelector('.clear-btn');
 const inputRentClearButton = document.querySelector('.clear-btn-rent');
+//Header nav
+const header = document.querySelector('#header');
 
 function fetchData() {
   fetch('assets/data/data.json')
@@ -103,14 +105,23 @@ function showSlide(index) {
   UpdateSlideCardContent(currentSlide);
 }
 
+function heroSliderCardAnimation() {
+  heroSliderCards.classList.remove('property-card-information-animation');
+  void heroSliderCards.offsetWidth;
+  heroSliderCards.classList.add('property-card-information-animation');
+}
+
 prevButton.addEventListener('click', () => {
   currentSlide--;
   showSlide(currentSlide);
+  heroSliderCardAnimation();
 });
 
 nextButton.addEventListener('click', () => {
   currentSlide++;
   showSlide(currentSlide);
+  
+  heroSliderCardAnimation();
 });
 
 // Cards img overlay
@@ -256,6 +267,12 @@ function renderAgentsContent(data) {
 
 hamburgerMenu.addEventListener('click', () => {
     navbar.classList.toggle('active');
+    hamburgerMenu.classList.toggle('open');
+});
+
+document.querySelector('main').addEventListener('click', function(e) {
+  navbar.classList.remove('active');
+  hamburgerMenu.classList.remove('open');
 });
 
 //Clear Search Input
@@ -333,6 +350,7 @@ function resetSortRent() {
 resetButton.addEventListener('click', resetSort);
 resetButtonRent.addEventListener('click', resetSortRent);
 
+backToTopButton.style.display = 'none';
 // Show the button when the user scrolls down 200px
 window.onscroll = function () {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

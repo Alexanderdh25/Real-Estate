@@ -141,6 +141,24 @@ nav ul li a:hover {
     height: 3px;
     background-color: #333;
     border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* HAMBURGER CLOSE BUTTON EFFECT */
+.hamburger-menu.open .bar:nth-child(1) {
+    translate: 4px -2px;
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    translate: 4px 1px;
+    transform-origin: left;
+    transform: rotate(-45deg)
 }
 
 .cta-button a {
@@ -191,6 +209,22 @@ nav ul li a:hover {
     max-width: 378px;
     width: 100%;
     z-index: 1;
+}
+
+.property-card-information-animation {
+    animation: fade-in 0.15s ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+      /* Effect values */
+      transform: translate(-46%, -46%);
+      opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .property-status {
@@ -415,6 +449,18 @@ form {
     background: #fff;
   }
 
+  /* WITH CSS-GRID */
+  /* .card-container,
+  .card-container-rent {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    gap: 30px 18px;
+    justify-items: center;
+    padding: 20px;
+    background: #fff;
+    align-items: center;
+  } */
+
   .card-property-price {
     font-size: 1.1rem;
     font-weight: 600;
@@ -620,6 +666,16 @@ footer ul li a {
     color: #fff;
 }
 
+/* EFFECTS */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 @media (max-width: 768px) {
     .hero-slider h1 {
@@ -701,6 +757,35 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.map .title-info {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.info div p {
+    margin: 0px;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.info div img {
+    width: 25px;
 }
 
 .map {
@@ -796,6 +881,7 @@ button {
     }
 }
 
+
 @media (max-width: 700px) {
     #home {
         padding: 5px;
@@ -803,6 +889,10 @@ button {
 
     header .hamburger-menu {
         margin-right: 25px;
+    }
+
+    nav ul li:last-child {
+        margin-top: 30px; 
     }
 
     .property-status {
@@ -929,6 +1019,22 @@ button {
 
     #back-to-top img {
         width: 20px;
+    }
+    
+    .map {
+        margin: 50px 0;
+    }
+
+    .map .title-info {
+        font-size: 11px;
+    }
+
+    .info div p {
+        font-size: 10px;
+    }
+    
+    .info div img {
+        width: 17px;
     }
 
     footer {

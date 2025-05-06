@@ -109,11 +109,12 @@ nav ul li .cta {
 }
 
 nav ul li .cta:hover {
-    background-color: #c93b3b; /* Slightly darker on hover */
+    background-color: #c93b3b;
     box-shadow: 0 6px 16px rgba(229, 66, 66, 0.4);
 }
 
 nav ul li a {
+    position: relative;
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -122,12 +123,28 @@ nav ul li a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #e54242; /* Cool blue background */
-    color: #fff; /* White text on hover */
-    box-shadow: 0 4px 12px rgba(229, 66, 66, 0.3); /* This line adds the soft glow */
-
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e54242;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
+
+nav ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* nav ul li a:hover {
+    background-color: #e54242; 
+    color: #fff; 
+    box-shadow: 0 4px 12px rgba(229, 66, 66, 0.3);
+} */
 
 .hamburger-menu {
     display: none;
@@ -768,11 +785,10 @@ button {
 }
 
 .map .title-info {
-    padding: 13px;
+    padding-top: 20px;
     font-size: 13px;
     text-align: center;
     font-weight: 600;
-    margin-bottom: 10px;
     text-transform: uppercase;
 }
 

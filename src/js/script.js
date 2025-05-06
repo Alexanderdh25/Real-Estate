@@ -345,12 +345,10 @@ const resetButtonRent = document.querySelector('#resetButtonRent');
 
 function resetSort() {
   renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
-  resetButton.blur();
 }
 
 function resetSortRent() {
   renderProperties(allPropertiesForRent, propertiesToShow, villaForRentCardContainer);
-  resetButtonRent.blur();
 }
 resetButton.addEventListener('click', resetSort);
 resetButtonRent.addEventListener('click', resetSortRent);

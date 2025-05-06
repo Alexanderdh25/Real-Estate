@@ -760,6 +760,7 @@ button {
 }
 
 .map .title-info {
+    font-size: 13px;
     text-align: center;
     font-weight: 600;
     margin-bottom: 10px;

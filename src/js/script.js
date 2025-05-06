@@ -52,8 +52,11 @@ function fetchData() {
 function UpdateSlideCardContent(index) {
   const cardData = sliderData[index];
 
+  const isRentalStatus = cardData.badge.toLowerCase().includes('rent');
+  const statusClass = isRentalStatus ? 'property-status-rent' : 'property-status';
+
   const cardHTML = `
-                <span class="property-status">${cardData.badge}</span>
+                <span class="${statusClass}">${cardData.badge}</span>
             <div class="card-header">
                 <h2 class="title">${cardData.title}</h2>
                 <p class="card-address">

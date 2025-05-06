@@ -227,7 +227,7 @@ nav ul li a:hover {
     }
 }
 
-.property-status {
+.property-status, .property-status-rent {
     position: absolute;
     top: -17px;
     background: #e54242;
@@ -240,6 +240,10 @@ nav ul li a:hover {
     line-height: 21px;
     -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, .15);
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, .15);
+}
+
+.property-status-rent {
+    background: #ee7f11;
 }
 
 .property-card-information .card-header {
@@ -992,7 +996,7 @@ a[href^="tel"] {
     }
 
     article h2 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     article p {
@@ -1006,8 +1010,12 @@ a[href^="tel"] {
     }
 
     .map h2 {
-        font-size: 10px;
+        font-size: 16px;
         margin: 50px;
+    }
+
+    .map iframe {
+        height: 250px;
     }
 
     .buttons {

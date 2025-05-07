@@ -140,6 +140,10 @@ nav ul li a:hover::after {
     opacity: 1;
 }
 
+nav ul li a.cta::after {
+    content: none;
+}
+
 /* nav ul li a:hover {
     background-color: #e54242; 
     color: #fff; 

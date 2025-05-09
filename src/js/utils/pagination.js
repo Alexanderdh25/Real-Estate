@@ -1,0 +1,91 @@
+export function renderPagination({
+  data, 
+  containerSelector, 
+  paginationWrapperSelector, 
+  prevBtnSelector, 
+  nextBtnSelector, 
+  renderFunction, 
+  itemsKey, 
+  itemsPerPage = 5
+}) {
+  const container = document.querySelector(containerSelector);
+  const paginationWrapper = document.querySelector(paginationWrapperSelector);
+  const prevButton = document.querySelector(prevBtnSelector);
+  const nextButton = document.querySelector(nextBtnSelector);
+
+  const items = data[itemsKey];
+  let currentPage = 1;
+  let totalPages = Math.ceil(items.length / itemsPerPage);
+  
+  function updatePaginationButtons() {
+    prevButton.disabled = currentPage === 1;
+    nextButton.disabled = currentPage === totalPages;
+
+    const pageButtonsContainer = paginationWrapper.querySelector('.pageButtons');
+    pageButtonsContainer.innerHTML = '';
+
+     for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement('button');
+      pageButton.classList.add('page-button', `page${i}`);
+      pageButton.textContent = i;
+      if(i === currentPage) {
+        pageButton.classList.add('active');
+      } else {
+        pageButton.classList.remove('active');
+      }
+
+      pageButtonsContainer.appendChild(pageButton);
+    }
+  }
+  
+  function forSaleCardsAnimation() {
+    container.classList.remove('animate');
+    void container.offsetWidth;
+    container.classList.add('animate');
+  }
+
+  function renderPage() {
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const itemsToShow = items.slice(start, end);
+    renderFunction(itemsToShow, container);
+  }
+
+  prevButton.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderPage();
+      updatePaginationButtons();
+      forSaleCardsAnimation();
+    }
+  });
+  
+  nextButton.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderPage();
+      updatePaginationButtons();
+      forSaleCardsAnimation();
+    }
+  });
+  
+  function goToPage(pageNumber) {
+    if (pageNumber < 1 || pageNumber > totalPages) return;
+    currentPage = pageNumber;
+    renderPage();
+    updatePaginationButtons();
+  }
+  
+  paginationWrapper.addEventListener('click', function(e) {
+    let clickedPage; 
+    if(e.target.classList.contains('page-button')) {
+      console.log(e)
+      clickedPage = Number(e.target.textContent);
+      goToPage(clickedPage);
+    }
+    
+  });
+  
+  renderPage();
+  updatePaginationButtons();
+}

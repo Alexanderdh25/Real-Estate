@@ -48,6 +48,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://plus.unsplash.com/premium_photo-1661913412680-c274b6fea096?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmlsbGElMjBpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D",
+                "https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                "https://images.unsplash.com/photo-1543489822-c49534f3271f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjB2aWxsYXxlbnwwfHwwfHx8MA%3D%3D",
+                "https://images.pexels.com/photos/31817155/pexels-photo-31817155/free-photo-of-luxury-seaside-villa-with-modern-interior-design.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            ],
             "propertyPrice": "123.000"
         },
         {
@@ -60,6 +66,12 @@
                 "garages": "3 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://media.istockphoto.com/id/1311356176/photo/modern-luxury-home-interior.jpg?s=612x612&w=0&k=20&c=aAl2273jMoFxiDcU-ahN57Ky84dbxuOYgdzwN1-Pdpk=",
+                "https://www.theluxurysignature.com/wp-content/uploads/2024/03/Villa-Boonta-Natai-Phuket-54-3.jpg",
+                "https://media.istockphoto.com/id/154952872/photo/contemporary-island-villa.jpg?s=612x612&w=0&k=20&c=s_hHCWCofvWaar-NjSTPbCDFtUkEB6AFGCY4U9Xz2RQ=",
+                "https://media.istockphoto.com/id/160641325/photo/white-penthouse-interior.jpg?s=612x612&w=0&k=20&c=zCYlk1WJZ9J2YAMwY-IUfObTa6MNJy-YgCDBCcEL8No="
+            ],
             "propertyPrice": "223.000"
         },
         {
@@ -72,6 +84,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://images.pexels.com/photos/7902905/pexels-photo-7902905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "https://images.pexels.com/photos/29702290/pexels-photo-29702290/free-photo-of-luxurious-seaside-infinity-pool-with-scenic-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "https://images.pexels.com/photos/18310489/pexels-photo-18310489/free-photo-of-pool-and-deckchairs-on-terrace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "https://images.pexels.com/photos/9173340/pexels-photo-9173340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            ],
             "propertyPrice": "623.000"
         },
         {
@@ -84,6 +102,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://img.freepik.com/free-photo/contemporary-house-interior-design_23-2151050905.jpg?t=st=1746805654~exp=1746809254~hmac=e99223fb7614eecd601d8a1a2cec2a172e45c06c31872199198f68679d45e3a1&w=1380",
+                "https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-cd6c-61f7-a2a3-0f3bdcf19302/raw?se=2025-05-09T16%3A43%3A23Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-09T13%3A04%3A28Z&ske=2025-05-10T13%3A04%3A28Z&sks=b&skv=2024-08-04&sig=k6w7oQnhLWkyfHPkBW0Qae9asxqkyniFNox9H305f6o%3D",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "323.000"
         },
         {
@@ -96,6 +120,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://placehold.co/600x400?text=Main+Image",
+                "https://placehold.co/100x100?text=Thumbnail+1",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "723.000"
         },
         {
@@ -108,6 +138,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://placehold.co/600x400?text=Main+Image",
+                "https://placehold.co/100x100?text=Thumbnail+1",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "283.000"
         },
         {
@@ -120,6 +156,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://placehold.co/600x400?text=Main+Image",
+                "https://placehold.co/100x100?text=Thumbnail+1",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "623.000"
         },
         {
@@ -132,9 +174,15 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://placehold.co/600x400?text=Main+Image",
+                "https://placehold.co/100x100?text=Thumbnail+1",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "523.000"
         },{
-            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "imgSrc": "https://images.pexels.com/photos/10647324/pexels-photo-10647324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             "propertyTitle": "Villa 9",
             "propertyLocation": "Est. ST, 74 - East 72nd Street, NYC",
             "propertyContent": {
@@ -143,10 +191,16 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://placehold.co/600x400?text=Main+Image",
+                "https://placehold.co/100x100?text=Thumbnail+1",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "453.000"
         },
         {
-            "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "imgSrc": "https://plus.unsplash.com/premium_photo-1682377521724-ececd24a83b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 10",
             "propertyLocation": "Est. ST, 118 - Wall Street, NYC",
             "propertyContent": {
@@ -155,6 +209,12 @@
                 "garages": "2 Garages",
                 "squareFeet": "720 square feet"
             },
+            "imageGallery": [
+                "https://placehold.co/600x400?text=Main+Image",
+                "https://placehold.co/100x100?text=Thumbnail+1",
+                "https://placehold.co/100x100?text=Thumbnail+2",
+                "https://placehold.co/100x100?text=Thumbnail+3"
+            ],
             "propertyPrice": "123.000"
         }
         

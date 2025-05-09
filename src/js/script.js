@@ -1,5 +1,4 @@
 let currentSlide = 0;
-let propertiesToShow = 5; // Set initial number of properties to show
 let sliderData;
 let allPropertiesForSale = [];
 let allPropertiesForRent = [];
@@ -32,6 +31,10 @@ const inputClearButton = document.querySelector('.clear-btn');
 const inputRentClearButton = document.querySelector('.clear-btn-rent');
 //Header nav
 const header = document.querySelector('#header');
+//Pagination
+let propertiesToShow = 5; // Set initial number of properties to show
+let currentPage = 1;
+let totalPages;
 
 function fetchData() {
   fetch('assets/data/data.json')
@@ -160,18 +163,21 @@ function cardImgOverlay() {
 // Function to render the properties for sale (incrementally)
 function propertiesForSaleCards(data) {
   allPropertiesForSale = data.villasForSale;
+  totalPages = Math.ceil(allPropertiesForSale.length / propertiesToShow);
 
   // Show the initial set of sale properties (4 at a time)
   renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
 
-  showMorePropertiesForSale.addEventListener('click', () => {
-    propertiesToShow += 5;
-    renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
+  renderPaginationButtons(totalPages);
 
-    if (propertiesToShow >= allPropertiesForSale.length) {
-      showMorePropertiesForSale.style.display = 'none';
-    }
-  });
+  // showMorePropertiesForSale.addEventListener('click', () => {
+  //   propertiesToShow += 5;
+  //   renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
+
+  //   if (propertiesToShow >= allPropertiesForSale.length) {
+  //     showMorePropertiesForSale.style.display = 'none';
+  //   }
+  // });
 
   cardImgOverlay();
 }
@@ -183,24 +189,29 @@ function propertiesForRentCards(data) {
   // Show the initial set of rent properties (4 at a time)
   renderProperties(allPropertiesForRent, propertiesToShow, villaForRentCardContainer);
 
-  showMorePropertiesForRent.addEventListener('click', () => {
-    propertiesToShow += 5;
-    renderProperties(allPropertiesForRent, propertiesToShow, villaForRentCardContainer);
+  // showMorePropertiesForRent.addEventListener('click', () => {
+  //   propertiesToShow += 5;
+  //   renderProperties(allPropertiesForRent, propertiesToShow, villaForRentCardContainer);
 
-    if (propertiesToShow >= allPropertiesForRent.length) {
-      showMorePropertiesForRent.style.display = 'none';
-    }
-  });
+  //   if (propertiesToShow >= allPropertiesForRent.length) {
+  //     showMorePropertiesForRent.style.display = 'none';
+  //   }
+  // });
 }
 
 // Function to render properties in the container
 function renderProperties(properties, numberToShow, container) {
   container.innerHTML = '';
+  // console.log('PROPERTIES', properties, properties.length);
+  const starterIndex = (currentPage - 1) * numberToShow;
+  const endIndex = starterIndex + numberToShow;
 
-  for (let i = 0; i < numberToShow; i++) {
-    if (i >= properties.length) break;
+  const villasToShow = properties.slice(starterIndex, endIndex);
+  let isMoreThanFive = properties.length <= 5? properties : villasToShow;
+  // console.log('ISMORETHANFIVE', isMoreThanFive);
 
-    const villa = properties[i];
+  // console.log('STARTER', starterIndex, "ENDINDEX", endIndex, "VILLAS", villasToShow);
+  isMoreThanFive.forEach(villa => {
     const html = `
       <div class="card">
         <img src="${villa.imgSrc}" alt="Card 1" class="card-image">
@@ -233,8 +244,95 @@ function renderProperties(properties, numberToShow, container) {
       </div>
     `;
     container.insertAdjacentHTML('beforeend', html);
+  });
+}
+
+function renderPaginationButtons(totalPages) {
+	const pageBtns = document.querySelector('.pageButtons');
+  console.log(pageBtns)
+		
+   pageBtns.innerHTML = '';
+	 for (let i = 1; i <= totalPages; i++) {
+    const pageButton = document.createElement('button');
+    pageButton.classList.add('page-button', `page${i}`);
+    pageButton.textContent = i;
+    pageBtns.appendChild(pageButton);
+  }
+
+  updatePaginationButtons()
+}
+
+function updatePaginationButtons() {
+  totalPages = totalPages = Math.ceil(allPropertiesForSale.length / propertiesToShow);
+	const prevButton = document.querySelector('.prevPagination');
+  const nextButton = document.querySelector('.nextPagination');
+
+  prevButton.disabled = currentPage === 1;
+  nextButton.disabled = currentPage === totalPages;
+  
+  for(let i = 1; i <= totalPages; i++) {
+  	const pageButton = document.querySelector(`.page${i}`);
+
+    if(i === currentPage) {
+    	pageButton.classList.add('active');
+    } else {
+    	pageButton.classList.remove('active');
+    }
   }
 }
+
+function forSaleCardsAnimation() {
+  villaForSaleCardContainer.classList.remove('animate');
+  void villaForSaleCardContainer.offsetWidth;
+  villaForSaleCardContainer.classList.add('animate');
+}
+
+function goToPreviousPage() {
+	if(currentPage > 1) {
+    forSaleCardsAnimation()
+  	currentPage--;
+    renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
+    updatePaginationButtons();
+  }
+}
+
+function goToNextPage(totalPages) {
+  totalPages = Math.ceil(allPropertiesForSale.length / propertiesToShow);
+	if(currentPage < totalPages) {
+    forSaleCardsAnimation()
+  	currentPage++;
+    renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
+    updatePaginationButtons();
+  }
+}
+
+function goToPage(pageNumber) {
+	if(currentPage < 1 || currentPage > totalPages) return;
+  forSaleCardsAnimation()
+  currentPage = pageNumber;
+  renderProperties(allPropertiesForSale, propertiesToShow, villaForSaleCardContainer);
+  updatePaginationButtons();
+}
+
+document.querySelector('.prevPagination').addEventListener('click', function() {
+	goToPreviousPage();
+});
+
+document.querySelector('.nextPagination').addEventListener('click', function() {
+	goToNextPage();
+});
+
+const paginationButtons = document.querySelector('.pagination');
+
+paginationButtons.addEventListener('click', function(e) {
+	let clickedPage; 
+	if(e.target.classList.contains('page-button')) {
+  	clickedPage = Number(e.target.textContent);
+    goToPage(clickedPage);
+  }
+  
+});
+
 
 function renderPopularPlacesContent(data) {
   const popularPlacesData = data.popularPlaces;
@@ -299,6 +397,7 @@ inputRentClearButton.addEventListener('click', function(e) {
     
     const filteredForSale = allPropertiesForSale.filter(villa => villa.propertyTitle.toLowerCase().includes(searchQuery) || villa.propertyLocation.toLowerCase().includes(searchQuery));
     renderProperties(filteredForSale, propertiesToShow, villaForSaleCardContainer);
+  
   });
 
 
@@ -310,10 +409,15 @@ inputRentClearButton.addEventListener('click', function(e) {
   });
 
 function sortProperties() {
+  // console.log('ALLPROPERTIESSORT', allPropertiesForSale)
+  const starterSortIndex = (currentPage - 1) * propertiesToShow;
+  const endSortIndex = starterSortIndex + propertiesToShow;
   // Sort properties for sale and for rent
-  const sortedForSale = [...allPropertiesForSale.slice(0, propertiesToShow)].sort((a, b) => {
+  const sortedForSale = [...allPropertiesForSale.slice(starterSortIndex, endSortIndex)].sort((a, b) => {
     return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice; 
   });
+
+  // console.log('sortedForSale', sortedForSale)
 
   // Re-render the properties after sorting
   renderProperties(sortedForSale, propertiesToShow, villaForSaleCardContainer);

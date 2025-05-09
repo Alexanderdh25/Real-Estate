@@ -5,6 +5,7 @@
   import { renderPopularPlacesContent } from "./components/popularPlaces.js";
   import { renderPagination } from "./utils/pagination.js";
   import { cardImgOverlay } from "./utils/galleryCardsOverlay.js";
+  import { hamburgerMenu } from "./utils/hamburgerMenu.js";
 
   let allPropertiesForSale = [];
   let propertiesToShow = 5;
@@ -24,7 +25,8 @@
         const container = document.querySelector('.card-container');
         renderPropertyCards(propertiesToDisplay, container); // This renders the first page
         cardImgOverlay(); 
-
+        hamburgerMenu();
+        
         renderPagination({
           data,
           containerSelector: '.card-container',

@@ -1,14 +1,10 @@
-export function cardImgOverlay() {
-    const containers = [
-      document.querySelector('.card-container'),
-      document.querySelector('.card-container-rent')
-    ];
-
+export function cardImgOverlay({overlayContainer}) {
     const overlay = document.getElementById('overlay');
     const closeBtn = document.getElementById('closeBtn');
     const mainImage = document.getElementById('mainImage');
     const thumbnailsContainer = overlay.querySelector('.image-thumbnails');
-  
+    const container = document.querySelector(overlayContainer);
+
     function buttonDelegation(e) {
       const button = e.target.closest('.card-gallery');
       if (button) {
@@ -27,9 +23,8 @@ export function cardImgOverlay() {
       }
     }
   
-    containers.forEach(container => {
-      if (container) container.addEventListener('click', buttonDelegation);
-    });
+    container.addEventListener('click', buttonDelegation);
+
   
     closeBtn.onclick = () => {
       overlay.style.display = 'none';

@@ -13,7 +13,7 @@ export function renderPagination({
   const prevButton = document.querySelector(prevBtnSelector);
   const nextButton = document.querySelector(nextBtnSelector);
 
-  const items = data[itemsKey];
+  let items = data[itemsKey];
   let currentPage = 1;
   let totalPages = Math.ceil(items.length / itemsPerPage);
   
@@ -49,6 +49,14 @@ export function renderPagination({
     const end = start + itemsPerPage;
     const itemsToShow = items.slice(start, end);
     renderFunction(itemsToShow, container);
+  }
+
+  function reRender(newItems) {
+    items = newItems;
+    totalPages = Math.ceil(items.length / itemsPerPage);
+    currentPage = 1;
+    renderPage();
+    updatePaginationButtons();
   }
 
   prevButton.addEventListener('click', () => {
@@ -88,4 +96,6 @@ export function renderPagination({
   
   renderPage();
   updatePaginationButtons();
+
+  return { reRender }
 }

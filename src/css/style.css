@@ -1072,21 +1072,46 @@ a[href^="tel"] {
         margin-top: 10px;
         font-size: 16px;
     }
-
-    .card-container {
+/* TESTING SCROLLING */
+      .card-container {
         overflow: scroll;
         height: 550px;
         margin-top: 25px;
+        padding: 20px 0px;
+        scrollbar-width: none;
+        width: 80%;
+        margin: 0 auto;
     }
-
-    /* .card-container::-webkit-scrollbar {
-        background-color: transparent;
-    } */
 
     .pagination {
         margin-top: 25px;
     }
 
+    .pagination button {
+        padding: 0;
+        background: #bebbbb
+    }
+
+    .pagination button.active {
+        background: #e54242;
+    }
+
+    .nextPagination {
+        display: none;
+    }
+
+    .prevPagination {
+        display: none;
+    }
+
+    .page-button {
+        font-size: 0;
+        height: 15px !important;
+        width: 15px !important;
+        padding: 0px;
+        border-radius: 50%;
+    }
+/* TESTING SCROLLING */
     article h2 {
         font-size: 16px;
     }

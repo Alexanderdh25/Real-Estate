@@ -9,6 +9,8 @@ export function swipeCards({
 
     let touchStartX = 0;
     let touchEndX = 0;
+    let isSwiping = false;
+    const swipeThreshold = 50;
 
     container.addEventListener('touchstart', (e) => {
         if (e.target.closest('.card-gallery')) return; // Prevent swipe if the touch starts on an inner element
@@ -20,9 +22,6 @@ export function swipeCards({
         touchEndX = e.changedTouches[0].clientX;
         handleSwipe();
     });
-
-    const swipeThreshold = 50;
-    let isSwiping = false;
 
     function handleSwipe() {
         if (isSwiping) return;
@@ -39,7 +38,6 @@ export function swipeCards({
                 // Swiped left - Next Page
                 if (nextButton && !nextButton.disabled) {
                     nextButton.click();
-                    container.scrollTop = 0
                 }
             }
 
@@ -47,7 +45,6 @@ export function swipeCards({
                 // Swiped right - Previous Page
                 if (prevButton && !prevButton.disabled) {
                     prevButton.click();
-                    container.scrollTop = 0;
                 }
             }
             isSwiping = false;

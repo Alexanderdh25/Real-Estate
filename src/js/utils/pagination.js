@@ -38,7 +38,7 @@ export function renderPagination({
     }
   }
   
-  function forSaleCardsAnimation() {
+  function cardsAnimation() {
     container.classList.remove('animate');
     void container.offsetWidth;
     container.classList.add('animate');
@@ -64,7 +64,7 @@ export function renderPagination({
       currentPage--;
       renderPage();
       updatePaginationButtons();
-      forSaleCardsAnimation();
+      cardsAnimation();
     }
   });
   
@@ -73,7 +73,7 @@ export function renderPagination({
       currentPage++;
       renderPage();
       updatePaginationButtons();
-      forSaleCardsAnimation();
+      cardsAnimation();
     }
   });
   
@@ -82,7 +82,7 @@ export function renderPagination({
     currentPage = pageNumber;
     renderPage();
     updatePaginationButtons();
-    forSaleCardsAnimation();  
+    cardsAnimation();  
   }
   
   paginationWrapper.addEventListener('click', function(e) {

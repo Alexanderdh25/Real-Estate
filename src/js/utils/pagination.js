@@ -82,6 +82,7 @@ export function renderPagination({
     currentPage = pageNumber;
     renderPage();
     updatePaginationButtons();
+    forSaleCardsAnimation();  
   }
   
   paginationWrapper.addEventListener('click', function(e) {

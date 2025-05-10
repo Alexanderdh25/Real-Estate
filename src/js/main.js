@@ -9,6 +9,7 @@
     import { sortCards } from "./utils/sortCards.js";
     import { searchCardInput } from "./utils/searchCards.js";
     import { scrollToTop } from "./utils/scrollToTop.js";
+    import { swipeCards } from './utils/swipe.js';
 
     window.onload = async () => {
         try {
@@ -43,6 +44,20 @@
             nextBtnSelector: '.nextPaginationRent',
             renderFunction: renderPropertyCards,
             itemsKey: 'villasForRent',
+          });
+
+          swipeCards({
+            containerSelector: '.card-container',
+            prevButtonSelector: '.prevPagination',
+            nextButtonSelector: '.nextPagination',
+            reRenderFunction: salePagination.reRender
+          });
+
+          swipeCards({
+            containerSelector: '.card-container-rent',
+            prevButtonSelector: '.prevPaginationRent',
+            nextButtonSelector: '.nextPaginationRent',
+            reRenderFunction: salePagination.reRender
           });
 
           sortCards({

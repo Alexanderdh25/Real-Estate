@@ -513,7 +513,14 @@ form {
     justify-content: space-around;
     padding: 20px;
     background: #fff;
+    margin-left: 16px;
+    overflow: scroll;
+    height: 544px;
   }
+
+  .card-container::-webkit-scrollbar {
+        background-color: transparent;
+    }
 
   .animate {
     animation: slideIn 0.25s ease;

@@ -10,7 +10,7 @@ export function swipeCards({
     let touchStartX = 0;
     let touchEndX = 0;
     let isSwiping = false;
-    const swipeThreshold = 50;
+    const swipeThreshold = 80;
 
     container.addEventListener('touchstart', (e) => {
         if (e.target.closest('.card-gallery')) return; // Prevent swipe if the touch starts on an inner element

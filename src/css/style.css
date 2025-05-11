@@ -9,7 +9,8 @@
     position: fixed;
     bottom: 100px;
     right: 20px;
-    background-color: #007bff;
+    /* background-color: #007bff; */
+    background: #e54242;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -26,7 +27,8 @@
 }
 
 #back-to-top:hover {
-    background-color: #0056b3;
+    /* background-color: #0056b3; */
+    background: #dc3e3e;
 }
 
 body {
@@ -1082,7 +1084,8 @@ a[href^="tel"] {
         font-size: 16px;
     }
 /* TESTING SCROLLING */
-      .card-container {
+      .card-container,
+      .card-container-rent {
         overflow: scroll;
         height: 550px;
         margin-top: 25px;
@@ -1093,24 +1096,29 @@ a[href^="tel"] {
         margin-top: 13px;
     }
 
-    .pagination {
+    .pagination
+    ,.pagination-rent {
         margin-top: 25px;
     }
 
-    .pagination button {
+    .pagination button,
+    .pagination-rent button {
         padding: 0;
         background: #bebbbb
     }
 
-    .pagination button.active {
+    .pagination button.active,
+    .pagination-rent button.active {
         background: #e54242;
     }
 
-    .nextPagination {
+    .nextPagination,
+    .nextPaginationRent {
         display: none;
     }
 
-    .prevPagination {
+    .prevPagination,
+    .prevPaginationRent {
         display: none;
     }
 
@@ -1156,7 +1164,7 @@ a[href^="tel"] {
     }
 
     #back-to-top {
-        padding: 6px 16px;
+        padding: 5px 16px;
     }
 
     #back-to-top img {

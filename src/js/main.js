@@ -50,14 +50,21 @@
             containerSelector: '.card-container',
             prevButtonSelector: '.prevPagination',
             nextButtonSelector: '.nextPagination',
-            reRenderFunction: salePagination.reRender
+            // reRenderFunction: salePagination.reRender
           });
 
           swipeCards({
             containerSelector: '.card-container-rent',
             prevButtonSelector: '.prevPaginationRent',
             nextButtonSelector: '.nextPaginationRent',
-            reRenderFunction: salePagination.reRender
+            // reRenderFunction: rentPagination.reRender
+          });
+
+          swipeCards({
+            containerSelector: '.slider',
+            prevButtonSelector: '.next',
+            nextButtonSelector: '.prev',
+            // reRenderFunction: salePagination.reRender
           });
 
           sortCards({

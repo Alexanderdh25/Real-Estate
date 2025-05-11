@@ -1058,6 +1058,11 @@ a[href^="tel"] {
         font-size: 18px;
     }
 
+    .hero-slider .next,
+    .hero-slider .prev {
+        display: none;
+    }
+
     form {
         display: flex;
         flex-wrap: wrap;

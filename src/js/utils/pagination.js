@@ -88,7 +88,6 @@ export function renderPagination({
   paginationWrapper.addEventListener('click', function(e) {
     let clickedPage; 
     if(e.target.classList.contains('page-button')) {
-      console.log(e)
       clickedPage = Number(e.target.textContent);
       goToPage(clickedPage);
     }

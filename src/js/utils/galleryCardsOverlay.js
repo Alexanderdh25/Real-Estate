@@ -21,7 +21,7 @@ export function cardImgOverlay({overlayContainer}) {
           thumbnailsContainer.innerHTML = '';
         }
         overlay.style.display = 'flex';
-        body.classList.add('no-scroll');
+        // body.classList.add('no-scroll');
       }
     }
   
@@ -30,13 +30,13 @@ export function cardImgOverlay({overlayContainer}) {
   
     closeBtn.onclick = () => {
       overlay.style.display = 'none';
-       body.classList.remove('no-scroll');
+      //  body.classList.remove('no-scroll');
     };
   
     overlay.onclick = (e) => {
       if (e.target === overlay) {
         overlay.style.display = 'none';
-         body.classList.remove('no-scroll');
+        //  body.classList.remove('no-scroll');
       }
     };
   

@@ -20,8 +20,8 @@ export function sortCards({
    });
 
    resetSortButton.addEventListener('click', function() {
-    const items = data[items]
+    const items = data[itemsKey]
     reRenderFunction(items);
     sortAscending = false;
-   })
+   });
 }

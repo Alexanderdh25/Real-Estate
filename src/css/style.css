@@ -716,6 +716,10 @@ form {
     margin-bottom: 10px;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 footer {
     padding: 1.5rem 0;
     background: #303441;
@@ -1061,7 +1065,7 @@ a[href^="tel"] {
 
     .clear-btn,
     .clear-btn-rent {
-        display: block;
+        display: none;
     }
 
     form  #searchInputRent, #searchInput {
@@ -1081,6 +1085,7 @@ a[href^="tel"] {
         scrollbar-width: none;
         width: 80%;
         margin: 0 auto;
+        margin-top: 13px;
     }
 
     .pagination {

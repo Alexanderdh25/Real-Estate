@@ -38,6 +38,7 @@ export function swipeCards({
                 // Swiped left - Next Page
                 if (nextButton && !nextButton.disabled) {
                     nextButton.click();
+                    container.scrollTop = 0;
                 }
             }
 
@@ -45,6 +46,7 @@ export function swipeCards({
                 // Swiped right - Previous Page
                 if (prevButton && !prevButton.disabled) {
                     prevButton.click();
+                    container.scrollTop = 0;
                 }
             }
             isSwiping = false;

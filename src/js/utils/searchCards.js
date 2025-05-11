@@ -10,17 +10,24 @@ export function searchCardInput({
     const items = data[itemsKey];
     let timeout;
 
+    function hideClearButton() {
+        clearSearchInput.style.display = 'none';
+    }
+
     searchInput.addEventListener('input', function() {
         clearTimeout(timeout);
         const searchQuery = this.value.toLowerCase();
         //Debouncing - limit the number of times the search function is triggered by delaying the search until the user stops typing for a certain period of time
         timeout = setTimeout(() => {
+            if(searchInput.value.length > 0 && window.innerWidth < 768) clearSearchInput.style.display = 'block';
+            else hideClearButton()
+
             const filteredItems = items.filter(item => 
                 item.propertyTitle.toLowerCase().includes(searchQuery) || 
                 item.propertyLocation.toLowerCase().includes(searchQuery)
             );
             reRenderFunction(filteredItems);
-        }, 300)
+        }, 200)
     });
 
     clearSearchInput.addEventListener('click', function(e) {
@@ -29,5 +36,6 @@ export function searchCardInput({
         
         searchInput.value = '';
         reRenderFunction(items);
+        hideClearButton()
     });
 }

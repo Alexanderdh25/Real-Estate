@@ -318,7 +318,7 @@ nav ul li a.cta::after {
 }
 
 .heroPagination {
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     top: 93%;

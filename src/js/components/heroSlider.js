@@ -7,6 +7,7 @@ export function heroSlider(data) {
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     const heroSliderCards = document.querySelector('.property-card-information');
+    const heroPaginationSection = document.querySelector('.heroPagination');
     const heroSliderPagination = document.querySelector('.heroPaginationButtons');
     
     function UpdateSlideCardContent(index) {
@@ -56,6 +57,7 @@ export function heroSlider(data) {
       function updateHeroPagination() {
         const heroPaginationContainer = document.querySelector('.heroPaginationButtons'); 
         heroPaginationContainer.innerHTML = '';
+        heroPaginationSection.style.display = 'flex';
         
         for(let i = 0; i < slides.length; i++) {
             const pageButton = document.createElement('button');

@@ -8,6 +8,7 @@ export function sortCards({
    const sortButton = document.querySelector(sortVillasButton);
    const resetSortButton = document.querySelector(resetButton);
    let sortAscending = false;
+   console.log(reRenderFunction)
    
    sortButton.addEventListener('click', function() {
     const items = data[itemsKey].slice();

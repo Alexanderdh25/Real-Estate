@@ -317,7 +317,7 @@ nav ul li a.cta::after {
     margin: 20px 0px;
 }
 
-.heroSectionPagination {
+.heroPagination {
     display: flex;
     position: absolute;
     width: 100%;
@@ -325,13 +325,20 @@ nav ul li a.cta::after {
     justify-content: center;
 }
 
-.heroSectionPagination .hero-slider {
-    height: 15px;
-    width: 15px;
+.heroPaginationButtons {
+    display: flex;
+    background: #3232326b;
+    border-radius: 30px;
+    padding: 6px;
+}
+
+.heroPaginationButtons .hero-slider {
+    height: 14px;
+    width: 14px;
     padding: 0px;
     border-radius: 50%;
     font-size: 0;
-    margin-left: 10px;
+    margin: 0 5px;
 }
 
 .hero-active {
@@ -1086,7 +1093,7 @@ a[href^="tel"] {
         display: none;
     }
 
-    .heroSectionPagination .hero-slider {
+    .heroPaginationButtons .hero-slider {
         height: 13px;
         width: 13px;
     }

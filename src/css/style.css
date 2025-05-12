@@ -1094,8 +1094,12 @@ a[href^="tel"] {
     }
 
     .heroPaginationButtons .hero-slider {
-        height: 13px;
-        width: 13px;
+        height: 12px;
+        width: 12px;
+    }
+
+    .heroPaginationButtons {
+        padding: 3px;    
     }
 
     form {

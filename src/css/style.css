@@ -1086,6 +1086,11 @@ a[href^="tel"] {
         display: none;
     }
 
+    .heroSectionPagination .hero-slider {
+        height: 15px;
+        width: 15px;
+    }
+
     form {
         display: flex;
         flex-wrap: wrap;

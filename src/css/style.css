@@ -317,6 +317,27 @@ nav ul li a.cta::after {
     margin: 20px 0px;
 }
 
+.heroSectionPagination {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 85%;
+    justify-content: center;
+}
+
+.heroSectionPagination .hero-slider {
+    height: 18px;
+    width: 18px;
+    padding: 0px;
+    border-radius: 50%;
+    font-size: 0;
+    margin-left: 10px;
+}
+
+.hero-active {
+    background: #e54242;
+}
+
 .pagination, .pagination-rent {
     display: flex;
     justify-content: center;

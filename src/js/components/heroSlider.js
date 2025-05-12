@@ -7,6 +7,7 @@ export function heroSlider(data) {
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     const heroSliderCards = document.querySelector('.property-card-information');
+    const heroSliderPagination = document.querySelector('.heroSectionPagination');
     
     function UpdateSlideCardContent(index) {
         const cardData = sliderData[index];
@@ -47,11 +48,27 @@ export function heroSlider(data) {
                       <span>${cardData.price}</span>
                   </div>
                   `;
-      
         heroSliderCards.innerHTML = '';
         heroSliderCards.insertAdjacentHTML('beforeend', cardHTML);
       }
       UpdateSlideCardContent(currentSlide);
+
+      function updateHeroPagination() {
+        const heroPaginationContainer = document.querySelector('.heroSectionPagination'); 
+        heroPaginationContainer.innerHTML = '';
+        for(let i = 0; i < slides.length; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.classList.add('hero-slider', `page${i}`);
+            pageButton.textContent = i;
+            if(i === currentSlide) {
+                pageButton.classList.add('hero-active');
+            } else {
+                pageButton.classList.remove('hero-active');
+            }
+            heroPaginationContainer.appendChild(pageButton);
+        }
+      }
+      updateHeroPagination();
     
       function showSlide(index) {
         if (index >= slides.length) {
@@ -77,12 +94,28 @@ export function heroSlider(data) {
         currentSlide--;
         showSlide(currentSlide);
         heroSliderCardAnimation();
+        updateHeroPagination();
       });
       
       nextButton.addEventListener('click', () => {
         currentSlide++;
         showSlide(currentSlide);
-        
         heroSliderCardAnimation();
+        updateHeroPagination();
+      });
+
+      function goToPage(pageNumber) {
+        if(pageNumber < 0 || pageNumber > slides.length) return;
+        currentSlide = pageNumber;
+        showSlide(currentSlide);
+        updateHeroPagination();
+      }
+    
+      heroSliderPagination.addEventListener('click', function(e) {
+        let clickedButton;
+        if(e.target.classList.contains('hero-slider')) {
+          clickedButton = Number(e.target.textContent);
+          goToPage(clickedButton);
+        }
       });
 }

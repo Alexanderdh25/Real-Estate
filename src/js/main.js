@@ -60,6 +60,13 @@
             // reRenderFunction: rentPagination.reRender
           });
 
+          swipeCards({
+            containerSelector: '.slider',
+            prevButtonSelector: '.prev',
+            nextButtonSelector: '.next'
+            // reRenderFunction: rentPagination.reRender
+          });
+
           sortCards({
             data,
             sortVillasButton: '#sortButton',

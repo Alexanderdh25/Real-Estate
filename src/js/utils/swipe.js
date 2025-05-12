@@ -6,7 +6,7 @@ export function swipeCards({
     const container = document.querySelector(containerSelector);
     const prevButton = document.querySelector(prevButtonSelector);
     const nextButton = document.querySelector(nextButtonSelector);
-
+    
     let touchStartX = 0;
     let touchEndX = 0;
     let isSwiping = false;

@@ -28,6 +28,7 @@ export function renderPagination({
       const pageButton = document.createElement('button');
       pageButton.classList.add('page-button', `page${i}`);
       pageButton.textContent = i;
+
       if(i === currentPage) {
         pageButton.classList.add('active');
       } else {

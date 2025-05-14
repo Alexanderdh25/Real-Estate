@@ -235,13 +235,13 @@ nav ul li a.cta::after {
 }
 
 .property-card-information-animation {
-    animation: fade-in 0.15s ease-in;
+    animation: fade-in 0.38s ease-in;
 }
 
 @keyframes fade-in {
     0% {
       /* Effect values */
-      transform: translate(-46%, -46%);
+      transform: translate(-38%, -50%);
       opacity: 0;
     }
 

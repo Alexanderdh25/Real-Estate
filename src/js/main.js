@@ -10,6 +10,7 @@
     import { searchCardInput } from "./utils/searchCards.js";
     import { scrollToTop } from "./utils/scrollToTop.js";
     import { swipeCards } from './utils/swipe.js';
+    import { userForm } from "./components/userForm.js";
 
     window.onload = async () => {
         try {
@@ -25,6 +26,7 @@
             overlayContainer: ".card-container-rent"
           });
           hamburgerMenu();
+          userForm();
           
           const salePagination = renderPagination({
             data,

@@ -75,7 +75,46 @@
             </div>
         </section>
         <!-- signup -->
+        <div id="userAccOverlay" class="overlay">
+            <div class='userAccContainer' id="userAccContainer">
+                <span id="closeUserFormButton" class="close-userForm-button">&times;</span>
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button class="userAccountButton">Sign Up</button>
+                </form>
+            </div>
 
+            <div class="form-container sign-in-container">
+                 <form action="#">
+                    <h1>Sign In</h1>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button class="userAccountButton">Sign In</button>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="form-overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome!</h1>
+                        <p>Please login to your account for better experience</p>
+                        <button class="overlayButton userAccountButton" id="signIn">Sign In</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Welcome to Premium Properties</h1>
+                        <p>Let’s get you started on your exclusive journey.</p>
+                        <button class="overlayButton userAccountButton" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
         <!-- signup -->
         <article class="property-cards-header" id="property">
             <h2>Properties For Sale</h2>
@@ -131,7 +170,7 @@
             <form>
                 <div class="search-container-rent">
                     <input type="text" id="searchInputRent" placeholder="Search..." />
-                    <button class="clear-btn-rent" id="clearBtn">×</button>
+                    <button class="clear-btn-rent" id="clearBtnRent">×</button>
                 </div>
                 <div class="buttons">
                     <button type="button" id="sortButtonRent">Sort by Price (Descending)</button>

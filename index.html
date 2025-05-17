@@ -78,23 +78,31 @@
         <div id="userAccOverlay" class="overlay">
             <div class='userAccContainer' id="userAccContainer">
                 <span id="closeUserFormButton" class="close-userForm-button">&times;</span>
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h1>Create Account</h1>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button class="userAccountButton">Sign Up</button>
-                </form>
-            </div>
+                <div class="form-container sign-up-container" id="sign-up-container">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button class="userAccountButton">Sign Up</button>
+                        <div class="loginSection">
+                            <span>Already a member?</span>
+                            <button class="loginButton" id="loginButton">Sign In</button>
+                        </div>
+                    </form>
+                </div>
 
-            <div class="form-container sign-in-container">
-                 <form action="#">
+            <div class="form-container sign-in-container" id="sign-in-container">
+                 <form action="#" id="myForm">
                     <h1>Sign In</h1>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="email" placeholder="Email"/>
+                    <input type="password" placeholder="Password"/>
                     <a href="#">Forgot your password?</a>
-                    <button class="userAccountButton">Sign In</button>
+                    <input type="submit" class="userAccountButton" value="Sign In"/>
+                    <div class="createAccountSection">
+                        <span>Don't have an account?</span>
+                        <button class="createAccountButton" id="createAccountButton">Sign Up</button>
+                    </div>
                 </form>
             </div>
 

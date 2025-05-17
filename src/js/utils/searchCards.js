@@ -19,6 +19,7 @@ export function searchCardInput({
         const searchQuery = this.value.toLowerCase();
         //Debouncing - limit the number of times the search function is triggered by delaying the search until the user stops typing for a certain period of time
         timeout = setTimeout(() => {
+            // if(searchInput.value.length > 0 && window.innerWidth < 768) only for mobile
             if(searchInput.value.length > 0 && window.innerWidth < 768) clearSearchInput.style.display = 'block';
             else hideClearButton()
 

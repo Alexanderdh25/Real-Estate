@@ -4,9 +4,13 @@ export function userForm() {
     const container = document.getElementById('userAccContainer');
     const userAccOverlay = document.getElementById('userAccOverlay');
     const closeUserFormButton = document.getElementById('closeUserFormButton');
-    const loginButton = document.querySelector('.cta');
+    const ctaButton = document.querySelector('.cta');
     const body = document.querySelector('body');
     const nav = document.querySelector('.nav-menu');
+    const burgerMenu = document.getElementById('hamburger-menu');
+    const createAccountButton = document.getElementById('createAccountButton');
+    const loginButton = document.getElementById('loginButton');
+
 
     signUpButton.addEventListener('click', () => {
         container.classList.add("right-panel-active");
@@ -16,10 +20,11 @@ export function userForm() {
         container.classList.remove("right-panel-active");
     });
 
-    loginButton.addEventListener('click', () => {
+    ctaButton.addEventListener('click', () => {
         userAccOverlay.style.display = 'flex';
         body.classList.add('no-scroll');
         nav.classList.remove('active');
+        burgerMenu.classList.toggle('open')
     });
 
     function hideUserForm() {
@@ -41,5 +46,15 @@ export function userForm() {
         if(e.keyCode === 27) {
             hideUserForm();
         }
-    })
+    });
+
+    createAccountButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        container.classList.add('right-panel-active');
+    });
+
+    loginButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        container.classList.remove('right-panel-active');
+    });
 }

@@ -11,14 +11,19 @@
     import { scrollToTop } from "./utils/scrollToTop.js";
     import { swipeCards } from './utils/swipe.js';
     import { userForm } from "./components/userForm.js";
+    import { addPropertyToFavorite } from "./utils/addToFavorite.js";
+    import { restoreLoginUI } from "./components/restoreLoginUI.js";
+    import { initRefreshContainers } from "./components/refreshCardContainers.js";
 
     window.onload = async () => {
+      restoreLoginUI();
         try {
           const data = await fetchData();
         
           heroSlider(data);
           renderPopularPlacesContent(data);
           renderAgentsContent(data);
+
           cardImgOverlay({
             overlayContainer: ".card-container"
           });
@@ -101,8 +106,21 @@
             reRenderFunction: rentPagination.reRender
           });
 
-          scrollToTop();
+          addPropertyToFavorite({
+            containerSelector: '.card-container',
+          });
 
+          addPropertyToFavorite({
+            containerSelector: '.card-container-rent',
+          });
+
+          initRefreshContainers({
+            data: data,
+            reRenderSale: salePagination.reRender,
+            reRenderRent: rentPagination.reRender
+          });
+
+          scrollToTop();
         } catch (error) {
           console.error('Error loading data:', error);
         }

@@ -11,7 +11,7 @@ export function sortCards({
    console.log(reRenderFunction)
    
    sortButton.addEventListener('click', function() {
-    const items = data[itemsKey].slice();
+    const items = data[itemsKey].slice();   
     items.sort((a,b) => {
         return sortAscending ? a.propertyPrice - b.propertyPrice : b.propertyPrice - a.propertyPrice;
     });

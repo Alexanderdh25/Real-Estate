@@ -39,6 +39,7 @@
     ],
     "villasForSale": [
         {
+            "id": "villaSale1",
             "imgSrc": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 1",
             "propertyLocation": "Est. ST, 89 - Broadway, NYC",
@@ -57,6 +58,7 @@
             "propertyPrice": "123.000"
         },
         {
+            "id": "villaSale2",
             "imgSrc": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 2",
             "propertyLocation": "Est. ST, 102 - Madison Avenue, NYC",
@@ -75,6 +77,7 @@
             "propertyPrice": "223.000"
         },
         {
+            "id": "villaSale3",
             "imgSrc": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 3",
             "propertyLocation": "Est. ST, 56 - Park Avenue, NYC",
@@ -93,6 +96,7 @@
             "propertyPrice": "623.000"
         },
         {
+            "id": "villaSale4",
             "imgSrc": "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 4",
             "propertyLocation": "Est. ST, 48 - Fifth Avenue, NYC",
@@ -111,6 +115,7 @@
             "propertyPrice": "323.000"
         },
         {
+            "id": "villaSale5",
             "imgSrc": "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 5",
             "propertyLocation": "Est. ST, 67 - East 57th Street, NYC",
@@ -129,6 +134,7 @@
             "propertyPrice": "723.000"
         },
         {
+            "id": "villaSale6",
             "imgSrc": "https://plus.unsplash.com/premium_photo-1694475117121-0c14f8ddf7bb?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 6",
             "propertyLocation": "Est. ST, 130 - Lexington Avenue, NYC",
@@ -147,6 +153,7 @@
             "propertyPrice": "283.000"
         },
         {
+            "id": "villaSale7",
             "imgSrc": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 7",
             "propertyLocation": "Est. ST, 90 - West 42nd Street, NYC",
@@ -165,6 +172,7 @@
             "propertyPrice": "623.000"
         },
         {
+            "id": "villaSale8",
             "imgSrc": "https://images.unsplash.com/photo-1717356280846-eaef82389e30?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 8",
             "propertyLocation": "Est. ST, 15 - Riverside Drive, NYC",
@@ -181,7 +189,9 @@
                 "https://placehold.co/100x100?text=Thumbnail+3"
             ],
             "propertyPrice": "523.000"
-        },{
+        },
+        {
+            "id": "villaSale9",
             "imgSrc": "https://images.pexels.com/photos/10647324/pexels-photo-10647324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             "propertyTitle": "Villa 9",
             "propertyLocation": "Est. ST, 74 - East 72nd Street, NYC",
@@ -200,6 +210,7 @@
             "propertyPrice": "453.000"
         },
         {
+            "id": "villaSale10",
             "imgSrc": "https://plus.unsplash.com/premium_photo-1682377521724-ececd24a83b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "propertyTitle": "Villa 10",
             "propertyLocation": "Est. ST, 118 - Wall Street, NYC",

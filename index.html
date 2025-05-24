@@ -35,7 +35,17 @@
                 </li>
                 <li><a href="#findAgent">Find an agent</a></li>
                 <li><a href="#map">Contact Us</a></li>
-                <li><a href="#" class="cta">Sign In</a></li>
+                <li>
+                    <a href="#" class="cta">Sign In</a>
+                </li>
+                <li>
+                    <button href="#" id="userProfileSection">Profile</button>
+                     <ul class="user-menu">
+                        <li><a href="/userProfile.html">My Profile</a></li>
+                        <li><a href="#" class="logoutButton">Log out</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="#" id="userProfileSection">Profile</a></li> -->
             </ul>
         </nav>
     </header>
@@ -79,11 +89,11 @@
             <div class='userAccContainer' id="userAccContainer">
                 <span id="closeUserFormButton" class="close-userForm-button">&times;</span>
                 <div class="form-container sign-up-container" id="sign-up-container">
-                    <form action="#">
+                    <form action="#" id="registerForm">
                         <h1>Create Account</h1>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
+                        <input type="text" placeholder="Name" id="username"/>
+                        <input type="email" placeholder="Email" id="email"/>
+                        <input type="password" placeholder="Password" id="password"/>
                         <button class="userAccountButton">Sign Up</button>
                         <div class="loginSection">
                             <span>Already a member?</span>
@@ -93,10 +103,10 @@
                 </div>
 
             <div class="form-container sign-in-container" id="sign-in-container">
-                 <form action="#" id="myForm">
+                 <form action="#" id="loginForm">
                     <h1>Sign In</h1>
-                    <input type="email" placeholder="Email"/>
-                    <input type="password" placeholder="Password"/>
+                    <input type="email" placeholder="Email" id="login-email"/>
+                    <input type="password" placeholder="Password" id="login-password"/>
                     <a href="#">Forgot your password?</a>
                     <input type="submit" class="userAccountButton" value="Sign In"/>
                     <div class="createAccountSection">
@@ -117,7 +127,7 @@
                     <div class="overlay-panel overlay-right">
                         <h1>Welcome to Premium Properties</h1>
                         <p>Let’s get you started on your exclusive journey.</p>
-                        <button class="overlayButton userAccountButton" id="signUp">Sign Up</button>
+                        <button class="overlayButton userAccountButton" id="registerButton">Sign Up</button>
                     </div>
                 </div>
             </div>

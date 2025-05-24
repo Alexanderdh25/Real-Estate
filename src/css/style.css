@@ -64,6 +64,7 @@ header .logo img {
 nav ul {
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 nav ul li {
@@ -196,6 +197,40 @@ nav ul li a.cta::after {
 
 .cta-button a:hover {
     background-color: #e55342;
+}
+
+#userProfileSection {
+    display: none;
+    background: transparent;
+    color:black;
+}
+
+.user-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.2s ease;
+}
+
+.user-menu.openMenu {
+    display: flex;
+}
+
+.user-menu li {
+    margin: 0;
+    padding: 13px;
+}
+
+.user-menu li a {
+    margin: 0;
+    padding: 0;   
 }
 
 .hero-slider {
@@ -758,7 +793,7 @@ form {
   }
 
   /* WITH CSS-GRID */
-  /* .card-container,
+  /* .card-container,x
   .card-container-rent {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: grid;
@@ -770,12 +805,42 @@ form {
   } */
 
   .card-property-price {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.1rem;
     font-weight: 600;
     color: #3b3939;
     text-transform: uppercase;
     text-decoration: none;
   }
+
+  .card-property-price img {
+    width: 22px;
+  }
+
+  .like-icon {
+  position: absolute;
+  transition: opacity 0.3s ease, z-index 0s 0.3s;
+  right: 18px;
+  cursor: pointer;
+}
+
+.default {
+    z-index: 1;
+}
+
+.hover {
+  opacity: 0;
+}
+
+.card-property-price:hover .hover {
+  opacity: 1;
+}
+
+.card-property-price:hover .default {
+  opacity: 0;
+}
+
   
   .forSalePropertySection, .forRentPropertySection {
     background: #fff;
@@ -836,6 +901,12 @@ form {
   
   .card-content {
     padding: 16px 15px;
+  }
+
+  .property-content {
+    padding: 16px 15px;
+    border-bottom: 1px solid #e9e2e2;
+    margin-bottom: 13px;
   }
   
   .card-title {
@@ -1216,8 +1287,18 @@ a[href^="tel"] {
         margin-right: 25px;
     }
 
-    nav ul li:last-child {
-        margin-top: 30px; 
+    .dropdown-menu {
+        border: 1px solid #333;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .dropdown-menu li {
+        border-bottom: 1px solid #333;
+    }
+
+    .dropdown-menu li:last-child {
+        border: none;
     }
 
     .property-status, .property-status-rent {
@@ -1381,6 +1462,22 @@ a[href^="tel"] {
         padding: 0;
         margin: 0;
         font-weight: 600;
+        margin-left: 2px;
+    }
+
+    .user-menu {
+        border: 1px solid #333;
+    }
+
+    .user-menu li {
+        border-bottom: 1px solid;
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-menu li:last-child {
+        border: none;
+        margin: 0;
     }
 
     .overlay h1 {
